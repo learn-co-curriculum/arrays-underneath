@@ -79,6 +79,23 @@ Looking at the chart above, shifting involves moving every remaining element to 
 
 So unshifting is big O(n)and shifting is bigO(n).  While popping and finding elements take the same amount of time regardless the size of the array.  That is, the time complexity is big O (1), meaning that the cost of the operation does not depend on the number of elements in the array.
 
+### A second problem: too many elements
+
+Remember that to retrieve information from an array, we simply need to apply the formula `startingAddress + index * bitAllocation` and go to the corresponding address.  Well, one problem that occurs with having all of these contiguous elements, is that we must allocate a specific amount of space, say enough space for 10 elements.  And now we have to think about what occurs when we want to add eleven elements?
+
+| memory address  |100  | 108  | 116 | 124 | 132 | 140
+| ----            |:---:| ----:|----:|----:|----:|----:|
+| arr             |  1  |  24  |  48 | 9   | 32  | song.mp3
+| arr.push(5)     |  1  |  24  |  48 | 9   | 32  | song.mp3
+
+Do you see our problem?  We want to push another element, but something else is on those eight bits.  If we move our new element to a different location, our formula for retrieving elements no longer works.  Instead what we do, is copy our array into a new location in memory where there is enough space.  However, notice that the cost of doing this is big O (n) as we must incur a cost for each element we copy over.  
+
+| new memory address with wide open space |300  | 308  | 316 | 324 | 332 | 340
+| ----            |:---:| ----:|----:|----:|----:|----:|
+| arr             |  1  |  24  |  48 | 9   | 32  | 
+| arr.push(5)     |  1  |  24  |  48 | 9   | 32  | 5
 ### Summary 
-We saw in this section that some of the strengths and weaknesses of using an array.  Retrieving elements and add elements to the end of the array has a time complexity of big O(1), while adding or removing elements at the beginning of an array is big O(n).  But do not despair, there is alternative collection that is less costly for adding and removing elements from the beginning and that is a linked list.  We will learn about it in the next section.
+We saw in this section that some of the strengths and weaknesses of using an array.  Retrieving elements and add elements to the end of the array has a time complexity of big O(1), while adding or removing elements at the beginning of an array is big O(n).  We also saw that because operations in our array rely on using neighboring locations in memory, we can run out of space.
+
+But do not despair, there is alternative data structure that does not rely on elements having contiguous memory addresses and is less costly for adding and removing elements from the beginning. That is a linked list.  We will learn about it in the next section.
 
