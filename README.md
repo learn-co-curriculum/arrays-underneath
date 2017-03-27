@@ -94,6 +94,7 @@ Do you see our problem?  We want to push another element, but something else is 
 | ----            |:---:| ----:|----:|----:|----:|----:|
 | arr             |  1  |  24  |  48 | 9   | 32  | 
 | arr.push(5)     |  1  |  24  |  48 | 9   | 32  | 5
+
 ### Summary 
 We saw in this section that some of the strengths and weaknesses of using an array.  Retrieving elements and add elements to the end of the array has a time complexity of big O(1), while adding or removing elements at the beginning of an array is big O(n).  We also saw that because operations in our array rely on using neighboring locations in memory, we can run out of space.
 
