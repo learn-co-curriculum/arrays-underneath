@@ -9,7 +9,7 @@ While you may be familiar with arrays, chances are you have not considered what 
 When we initialize an array in a programming language, the language 
 allocates space in memory for your array, and then points that starting variable to that address in memory.  Then for each element the program assigns a fixed amount of memory for each element.  
 
-![](https://docs.oracle.com/javase/tutorial/figures/java/objects-tenElementArray.gif)
+![](https://s3.amazonaws.com/learn-verified/objects-tenElementArray.gif)
 
 So let's say my array say starts at memory address 100.  And assume that the programming language allocates 8 bits for each element in the array.  And that it allocates enough space for ten elements evenly spaced in memory.
 
@@ -34,7 +34,7 @@ my_arr[3]
 100 + 3*8 = 124
 ```
 
-![](https://upload.wikimedia.org/wikipedia/commons/8/89/Mail_boxes.jpg)
+![](https://s3-us-west-2.amazonaws.com/curriculum-content/web-development/algorithms/mailboxes.jpg)
 
 
 
