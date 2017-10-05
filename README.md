@@ -16,7 +16,7 @@ So let's say my array say starts at memory address 100.  And assume that the pro
 Now, let's try to think through how a computer program retrieves an element at a specific index.
 
 ```javascript 
-let myarr = ['a']
+let my_arr = ['a']
 
 my_arr[0] = 'a'
 
@@ -100,3 +100,5 @@ We saw in this section that some of the strengths and weaknesses of using an arr
 
 But do not despair, there is alternative data structure that does not rely on elements having contiguous memory addresses and is less costly for adding and removing elements from the beginning. That is a linked list.  We will learn about it in the next section.
 
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/arrays-underneath'>Arrays Underneath</a> on Learn.co and start learning to code for free.</p>
