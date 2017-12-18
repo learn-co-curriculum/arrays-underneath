@@ -16,7 +16,7 @@ So let's say my array say starts at memory address 100.  And assume that the pro
 Now, let's try to think through how a computer program retrieves an element at a specific index.
 
 ```javascript 
-let myarr = ['a']
+let my_arr = ['a']
 
 my_arr[0] = 'a'
 
