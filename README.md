@@ -22,9 +22,9 @@ my_arr[0] = 'a'
 
 ```
 
-Well, we first initialize the array and assign the letter 'a' as the first element, the programming language associates the letter "a" to a specific space in memory.  In our example, address 100.  So then, when when we call `my_arr[0]` all the program has to do is go to address 100, and retreive the element.
+Well, we first initialize the array and assign the letter 'a' as the first element, the programming language associates the letter "a" to a specific space in memory.  In our example, address 100.  So then, when we call `my_arr[0]` all the program has to do is go to address 100, and retreive the element.
 
-So now, do you think happens if we call `my_arr[3]`, to return what is in that slot.  If the `my_arr` begins at address 100, and we allocate eight bits of space for each, what address does the program go to to retreive the element at index 3?
+So now, what do you think happens if we call `my_arr[3]`, to return what is in that slot.  If the `my_arr` begins at address 100, and we allocate eight bits of space for each, what address does the program go to to retreive the element at index 3?
 
 Is there a formula that we can come up with for retrieval?  Yes, it's algebra.
 
