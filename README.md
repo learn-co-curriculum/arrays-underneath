@@ -3,6 +3,7 @@
 ## Learning Goals
 
 - Explain how programming languages implement arrays
+- Identify the runtime complexity of common array methods in Big O notation
 
 ## Introduction
 
@@ -142,7 +143,7 @@ array rely on using neighboring locations in memory, we can run out of space.
 
 Here's a summary of the Big O of common array methods:
 
-| method                | Big O |
+| Method                | Big O |
 | --------------------- | ----- |
 | Access                | O(1)  |
 | Search                | O(n)  |
